@@ -1,0 +1,78 @@
+/* p1.html */
+.commonAnimation{
+    padding: 20px;
+    border-radius: 5px;
+    margin: 30px;
+    height: 300px;
+}
+.commonAnimation>h1{
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    text-shadow: 3px 3px 3px #000 ;
+}
+.animation1{
+    background: black;
+    /* animation: practical;
+    animation-duration: 10s;
+    animation-iteration-count: infinite; */
+    animation: practical 10s infinite;
+}
+@keyframes practical {
+    from{background: url(../images/)pink;}
+    to{background: rgb(54, 33, 54);}
+}
+
+/* p2.html */
+.animation2{
+    background-size: 100%;
+    animation: animation_image 10s infinite;
+}
+@keyframes animation_image {
+    from{background: url(../images/istockphoto.jpg)no-repeat top;color: white;}
+    to{background: url(../images/pexe.jpeg)no-repeat bottom;color: white;}
+}
+
+/* p3.html */
+.annimation3{
+    background: blue;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 15px;
+    color: #fff;
+    position: absolute;
+    animation: cssAnimation3 10s infinite;
+}
+@keyframes cssAnimation3 {
+    0%{
+        top: 0px;
+        left: 0px;
+        background: blue;
+        color: #000;
+    }
+    25%{
+        top: 0px;
+        left: 600px;
+        background: dark palevioletred;
+        color: blue;
+    }
+    50%{
+        top: 400px;
+        left: 600px;
+        background: dark rgb(45, 122, 68);
+        color: rgb(4, 4, 32); 
+    }
+    75%{
+        top: 400px;
+        left: 0px;
+        background:yellow ;
+        color: rgb(13, 114, 13);
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+        background:blue;
+        color:black;
+    }
+    
+}
